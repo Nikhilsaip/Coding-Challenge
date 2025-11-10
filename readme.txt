@@ -29,3 +29,9 @@ Each employee must have:
    - Is optional (may be empty)
    - When present, references an existing employee ID
    - Is empty for the CEO
+
+## Business Logic
+1. Organizational structure can be modified through the API (adding/removing reporting relationships)
+2. The reporting structure is maintained in both directions (manager-subordinate relationships)
+3. Changes to reporting relationships automatically update both the manager and subordinate records
+4. The list of subordinates is immutable from outside the Employee class to maintain data integrity
